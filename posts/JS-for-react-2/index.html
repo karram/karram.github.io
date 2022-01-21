@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="en" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="day-prompt" content="days ago"><meta name="hour-prompt" content="hours ago"><meta name="minute-prompt" content="minutes ago"><meta name="justnow-prompt" content="just now"><meta name="generator" content="Jekyll v4.2.1" /><meta property="og:title" content="Js for react 2" /><meta property="og:locale" content="en" /><meta name="description" content="JS for React Variable declaration const Identifiers whose value does not change." /><meta property="og:description" content="JS for React Variable declaration const Identifiers whose value does not change." /><link rel="canonical" href="https://karram.github.io/posts/JS-for-react-2/" /><meta property="og:url" content="https://karram.github.io/posts/JS-for-react-2/" /><meta property="og:site_name" content="Technobabble" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2021-12-28T00:00:00+01:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Js for react 2" /><meta name="twitter:site" content="@twitter_username" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"description":"JS for React Variable declaration const Identifiers whose value does not change.","url":"https://karram.github.io/posts/JS-for-react-2/","@type":"BlogPosting","headline":"Js for react 2","dateModified":"2021-12-28T00:00:00+01:00","datePublished":"2021-12-28T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://karram.github.io/posts/JS-for-react-2/"},"@context":"https://schema.org"}</script><title>Js for react 2 | Technobabble</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Technobabble"><meta name="application-name" content="Technobabble"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column align-items-end" lang="en"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src="https://avatars.githubusercontent.com/u/4878880?v=4" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Technobabble</a></div><div class="site-subtitle font-italic">Not mere babble. Technobabble.</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/karram" aria-label="github" class="order-3" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/twitter_username" aria-label="twitter" class="order-4" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['karthikram1024 at outook dot com',''].join('@')" aria-label="email" class="order-5" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" class="order-6" > <i class="fas fa-rss"></i> </a> <span class="icon-border order-2"></span> <span id="mode-toggle-wrapper" class="order-1"> <i class="mode-toggle fas fa-adjust"></i> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } var self = this; /* always follow the system prefers */ this.sysDarkPrefers.addListener(function() { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.updateMermaid(); }); } /* constructor() */ setDark() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_KEY); sessionStorage.removeItem(ModeToggle.MODE_KEY); } get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; } get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer) ) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } updateMermaid() { if (typeof mermaid !== "undefined") { let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default"); let config = { theme: expectedTheme }; /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function() { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } this.updateMermaid(); } /* flipMode() */ } /* ModeToggle */ let toggle = new ModeToggle(); $(".mode-toggle").click(function() { toggle.flipMode(); }); </script> </span></div></div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>Js for react 2</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>Js for react 2</h1><div class="post-meta text-muted d-flex flex-column"><div> <span class="semi-bold"> Karram </span> on <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Tue, Dec 28, 2021, 12:00 AM +0100" >Dec 28, 2021<i class="unloaded">2021-12-28T00:00:00+01:00</i> </span></div><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1271 words">7 min read</span></div></div><div class="post-content"><h1 id="js-for-react">JS for React</h1><h2 id="variable-declaration">Variable declaration</h2><h3 id="const">const</h3><p>Identifiers whose value does not change.</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>const x = true
+x = false // Exception
+</pre></table></code></div></div><h3 id="let">let</h3><p>lexical scoping for variables. Previously, variables declared inside {} or a for loop would be still globals. Variables declared with let have a limited scope.</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>var y = "Hello"
+if (y) {
+   let y = "world"
+   console.log("block", y) // prints block world
+}
+console.log("global", y) // prints global Hello
+</pre></table></code></div></div><h2 id="string-templates">String templates</h2><p>Provides an alternative to string concatenation. Supports multi-line template strings and whitespace inside the template. Useful for email html templates, for example.</p><p>For example</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>console.log(arg1 + " " + arg2)
+</pre></table></code></div></div><p>can be replaced with</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>console.log(`${arg1} ${arg2}`)
+</pre></table></code></div></div><h2 id="functions">Functions</h2><h3 id="function-declaration">Function declaration</h3><p>starts with the keyword function, followed by function name and args, and body. Default params are supported.</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>function myfn(arg1, arg2 = "World") {
+    console.log(`${arg1}, ${arg2}!`)
+}
+
+myfn("Hello", "World") // prints Hello, World!
+myfn("Hello") // also prints Hello, World!
+</pre></table></code></div></div><h3 id="function-expression">Function expression</h3><p>Another way is to use a function expression that creates the function as a variable</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>const myfn2 = function(arg1, arg2) {
+    console.log(`${arg1}, ${arg2}!`)
+}
+
+myfn2("Hello", "world")
+</pre></table></code></div></div><h3 id="declaration-vs-expression">Declaration vs Expression</h3><p>Function created using a function declaration can be used before the declaration itself. This wont work with function expressions. JS automatically moves (hoists) all function declarations to the top of the script.</p><h3 id="arrow-functions">Arrow Functions</h3><p>Create a function without using the function keyword or a return statement. Compact representation</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>const myfn3 = (arg1, arg2 = "World") =&gt; `${arg1}, ${arg2}!`
+
+myfn3("Hello") // prints Hello, World!
+</pre></table></code></div></div><h3 id="returning-objects">Returning objects</h3><p>Enclose the object in parentheses</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>const person = (firstname, lastname) =&gt; ({
+    first: firstname,
+    last: lastname
+    })
+
+console.log(person("Luke", "Skywalkerrr"))
+</pre></table></code></div></div><h3 id="arrow-functions-and-scope">Arrow functions and scope</h3><p>Arrow functions can be used to limit the scope of “this”. Without the arrow function used in setTimeout, this would be bound to something else.</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre>const tahoe = {
+    mountains: ["Freel", "Rose", "Tallac", "Rubicon", "Silver"],
+    print: function(delay = 1000) {
+    setTimeout(() =&gt; {
+            console.log(this.mountains.join(", "));
+        }, delay);
+    }
+};
+
+tahoe.print(); // Freel, Rose, Tallac, Rubicon, Silver
+</pre></table></code></div></div><h2 id="compiling-js">Compiling JS</h2><p>JS code can be compiled using Babel. The purpose of compilation is to convert modern code into a version of JS code supported widely by all browsers. For example, a new feature may not be supported by all browsers. You could write code using the new feature, and use Babel to generate JS code with the same functionality but compatible with even older browsers.</p><p>Babel is not the only such tool. It is one of the more popular tools.</p><p><a href="https://babeljs.io/repl" title="Babel Repl">Babel REPL</a></p><h2 id="objects-and-arrays">Objects and Arrays</h2><h3 id="destructuring-objects">Destructuring Objects</h3><p>Pulling desired fields out of objects into local variables.</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>const sandwich = {
+    bread: "dutch crunch",
+    meat: "tuna",
+    cheese: "swiss",
+    toppings: ["lettuce", "tomato", "mustard"]
+};
+const { bread, meat } = sandwich;
+console.log(bread, meat); // dutch crunch tuna
+</pre></table></code></div></div><p>Can also be used to destructure function arguments. In the example below, the firstname field is pulled out of the object passed in as arg</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>const lordify = ({ firstname }) =&gt; {
+    console.log(`${firstname} of Canterbury`);
+};
+const regularPerson = {
+    firstname: "Bill",
+    lastname: "Wilson"
+};
+lordify(regularPerson); // Bill of Canterbury
+</pre></table></code></div></div><p>This can be extended to complex objects</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre><td class="rouge-code"><pre>const regularPerson = {
+    firstname: "Bill",
+    lastname: "Wilson",
+    spouse: {
+        firstname: "Phil",
+        lastname: "Wilson"
+    }
+};
+
+const lordify = ({ spouse: { firstname } }) =&gt; {
+    console.log(`${firstname} of Canterbury`);
+};
+
+lordify(regularPerson); // Phil of Canterbury
+</pre></table></code></div></div><h3 id="destructuring-arrays">Destructuring Arrays</h3><p>Used to extract desired values from an array. Skip over unused values using a comma.</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>const [firstAnimal] = ["Horse", "Mouse", "Cat"]; // fetches the first value from the array. In this case, Horse
+const [, , thirdAnimal] = ["Horse", "Mouse", "Cat"]; // skips over the first two vals, and assigns Cat to thirdAnimal
+</pre></table></code></div></div><h3 id="object-literal-enhancement">Object literal enhancement</h3><p>Creates an object from smaller pieces or parts. Can also be used to create object methods.</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>const name = "Tallac";
+const elevation = 9738;
+const print = function() {
+    console.log(`Mt. ${this.name} is ${this.elevation} feet tall`);
+};
+
+const funHike = { name, elevation, print };
+funHike.print()
+</pre></table></code></div></div><h3 id="spread-operator-">Spread operator (…)</h3><h4 id="combine-arrays">Combine arrays</h4><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>var a = ["1", "2", "3"]
+var b = ["4", "5", "6"]
+var comb = [...a, ...b]
+console.log(comb) // prints ["1", "2", "3", "4", "5", "6"]
+</pre></table></code></div></div><h4 id="get-remaining-items-in-an-array">Get remaining items in an array</h4><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>const lakes = ["Donner", "Marlette", "Fallen Leaf", "Cascade"];
+const [first, ...others] = lakes;
+console.log(others.join(", ")); // Marlette, Fallen Leaf, Cascade
+</pre></table></code></div></div><h4 id="collect-arguments-to-a-function">Collect arguments to a function</h4><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>function directions(...args) { // args contains all the parameters passed to the function as a single array
+</pre></table></code></div></div><h4 id="also-works-on-objects">Also works on objects</h4><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>const morning = {
+    breakfast: "oatmeal",
+    lunch: "peanut butter and jelly"
+};
+const dinner = "mac and cheese";
+const backpackingMeals = {
+    ...morning,
+    dinner
+};
+
+console.log(backpackingMeals);
+</pre></table></code></div></div><h2 id="asynchronous-js">Asynchronous JS</h2><h3 id="promise">Promise</h3><p>An object that indicates whether an async operation is pending, completed, or failed. For example, fetch returns a promise</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>console.log(fetch("https://api.randomuser.me/?nat=US&amp;results=1"));
+</pre></table></code></div></div><h3 id="acting-on-a-promise---then-and-catch">Acting on a promise - then() and catch()</h3><p>.then() takes a callback function that acts on a promise. For example</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>fetch("https://api.randomuser.me/?nat=US&amp;results=1")
+.then(res =&gt; res.json())
+.then(json =&gt; json.results)
+.then(console.log)
+.catch(console.error);
+</pre></table></code></div></div><p>Output of each then becomes the input to the next then (technically the next cbk fn in then(…))</p><h3 id="acting-on-a-promise---async-and-await">Acting on a promise - async and await</h3><p>Declare a function as async() to indicate it needs to wait for an async operation to finish. Use await to signal which async operation to wait for. The code here looks sequential, like a normal function, compared to the chain of .then().</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>const getFakePerson = async () =&gt; {
+    try {
+        let res = await fetch("https://api.randomuser.me/?nat=US&amp;results=1");
+        let { results } = res.json();
+        console.log(results);
+    } catch (error) {
+        console.error(error);
+    }
+};
+
+getFakePerson();
+</pre></table></code></div></div><h3 id="building-a-promise">Building a promise</h3><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre>const getPeople = count =&gt;
+new Promise((resolves, rejects) =&gt; {
+    const api = `https://api.randomuser.me/?nat=US&amp;results=${count}`;
+    const request = new XMLHttpRequest();
+    request.open("GET", api);
+    request.onload = () =&gt;
+    request.status === 200
+        ? resolves(JSON.parse(request.response).results)
+        : reject(Error(request.statusText));
+    request.onerror = err =&gt; rejects(err);
+    request.send();
+});
+</pre></table></code></div></div><h2 id="classes">Classes</h2><p>JS used to support only prototypical inheritance. Now, the syntax has improved to look like other languages (think C++ or C#) but behind the scenes it still uses prototypes.</p><p>Example with inheritance</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre>class Expedition extends Vacation {
+    constructor(destination, length, gear) {
+        super(destination, length);
+        this.gear = gear;
+    }
+    print() {
+        super.print();
+        console.log(`Bring your ${this.gear.join(" and your ")}`);
+    }
+}
+</pre></table></code></div></div><h2 id="modules">Modules</h2><p>A module is a piece of reusable code that can be incorporated into other JS code without variable name collisions. Modules export functions or variables.</p><h3 id="exporting">Exporting</h3><ul><li>Use export to export anything from a module<li>Use export default if the module exports ONE and ONLY ONE thing</ul><p>Examples</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>export const print=(message) =&gt; log(message, new Date())
+export const log=(message, timestamp) =&gt;
+console.log(`${timestamp.toString()}: ${message}`)
+
+export default new Expedition("Mt. Freel", 2, ["water", "snack"]);
+</pre></table></code></div></div><h3 id="importing">Importing</h3><p>Use the import statement to import stuff from a module. Destructing works here, and like python import statements, imported stuff can be renamed during the import</p><p>Anything export defaulted can only be imported into a single variable</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span text-data=" Plaintext "><i class="fa-fw fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>import { print, log } from "./text-helpers";
+import freel from "./mt-freel";
+</pre></table></code></div></div></div><div class="post-tail-wrapper text-muted"><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Js for react 2 - Technobabble&url=https://karram.github.io/posts/JS-for-react-2/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Js for react 2 - Technobabble&u=https://karram.github.io/posts/JS-for-react-2/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=Js for react 2 - Technobabble&url=https://karram.github.io/posts/JS-for-react-2/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" title-succeed="Link copied successfully!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"><div class="access"></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"> <span class="pl-3 pt-2 mb-2">Contents</span><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/SqlAlchemy-Basics/"><div class="card-body"> <span class="timeago small" >Jan 21<i class="unloaded">2022-01-21T00:00:00+01:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Sqlalchemy basics</h3><div class="text-muted small"><p> SQLAlchemy What is it ? SQLAlchemy is the most popular ORM in python world It lets you model data as classes (Object) and map them to databases (relational) It also talks to multiple DB typ...</p></div></div></a></div><div class="card"> <a href="/posts/Helloworld/"><div class="card-body"> <span class="timeago small" >Dec 21, 2021<i class="unloaded">2021-12-21T00:00:00+01:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Helloworld</h3><div class="text-muted small"><p> Hello World !</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/Helloworld/" class="btn btn-outline-primary" prompt="Older"><p>Helloworld</p></a> <a href="/posts/SqlAlchemy-Basics/" class="btn btn-outline-primary" prompt="Newer"><p>Sqlalchemy basics</p></a></div></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center"><div class="footer-left"><p class="mb-0"> © 2022 <a href="https://github.com/karram">Karram</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><h4 class="text-muted mb-4">Trending Tags</h4></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id="></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', ''); }); </script>
